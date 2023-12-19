@@ -1,9 +1,10 @@
 variable "name" {
-  type = string
+  type        = string
   description = "The name of the repository"
 }
 
 variable "expire_count" {
-  type = number
+  type        = number
   description = "The number of images to keep in the repository"
+  default     = 30
 }
