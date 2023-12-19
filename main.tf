@@ -22,7 +22,7 @@ resource "aws_ecr_lifecycle_policy" "this" {
         "selection": {
           "tagStatus": "any",
           "countType": "imageCountMoreThan",
-          "countNumber": "${var.expire_count}"
+          "countNumber": ${var.expire_count}
         }
       }
     ]
